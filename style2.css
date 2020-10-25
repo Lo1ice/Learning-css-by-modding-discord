@@ -1,0 +1,140 @@
+body{
+    background: palegoldenrod url(genshin.png) no-repeat;
+    background-attachment: fixed;
+    font-size: 15px;
+    font-family: sans-serif;
+    width: 100%;
+    background-size: cover;
+}
+header{
+    background: peachpuff url(banner.jpg) no-repeat;
+    padding: 20px 0;
+    margin-bottom: 50px;
+    background-position: center;
+    text-align: center;
+    background-size: cover;
+    font-size: 75%;
+}
+h1{
+    font-size: 250%;
+    height: 20px;
+}
+h3 {
+    font-size: 24px;
+    text-decoration: underline;
+}
+a:link{
+    text-decoration: none;
+    color: crimson;
+}
+a:link:hover {
+    text-decoration: underline;
+    color: red;
+}
+abbr{
+    text-decoration: none;
+}
+.page-wrapper{
+    width: 60%;  
+    margin: auto;
+    padding:10px 30px 30px;
+    background-color: rgba(255, 255, 255, 0.9);
+   
+}
+.summary:before{
+    content:"TLDR";
+    display: block;
+    font-size: 24px;
+    font-weight: bold;
+    color: brown; 
+}
+.intro h3, .main h3{
+    color: brown;
+    margin-top: 30px;
+    margin-bottom: 15px;
+}
+p[role*="contentinfo"] {
+    text-align: center;
+    font-style: italic;
+    margin: 50px 0;
+}
+
+
+
+@media only screen and (min-width:900px){
+    .sidebar {
+        position: absolute;
+        right: 5%;
+        top: 50px;
+        background-color: rgba(255, 255, 255, 0.9);
+        width: 15%;
+        text-align: center;
+    }
+    .sidebar h3 {
+        background-color: rgb(61, 61, 41);
+        margin: 0;
+        padding: 10px 0px;
+        width:100%;
+        margin: 0;
+        font-size: 20px;
+        color: white;
+    }
+    ul {
+        margin: 0;
+    }
+    li{
+        padding: 20px 10px;
+        list-style: none;
+        margin-left: -40px;
+    }
+    li:hover{
+        background-color:rgba(0, 0, 0, 0.04);
+        transition: all .5s ease-in-out;
+    }
+    li:not(:last-of-type){
+        border-bottom: 1px solid rgba(0, 0, 0, 0.04);
+    }
+    footer {
+        display: grid;
+        grid-template-areas: "footer footer footer footer footer";
+        text-align: center;
+        width: 50%;
+        margin: auto;
+    }
+}
+@media only screen and (max-width:720px) {
+    .design-selection ul,.design-archives ul,.zen-resources ul{
+        display: grid;
+        grid-template-areas: "Paimon Paimon..";
+        grid-template-columns: 33% 33% 33%;
+       margin-left: -5%;
+    
+    }
+    
+    
+    li{
+        padding: 20px 10px;
+        list-style: none;
+        border: 1px solid gray;
+        text-align: center;
+        
+    }
+    li:hover{
+        background-color:rgba(0, 0, 0, 0.04);
+        transition: all .5s ease-in-out;
+    }
+    
+    footer{
+        display: grid;
+        grid-template-areas: "footer footer footer footer footer";
+        text-align: center;
+        width: 50%;
+        margin: auto;
+    }
+    .sidebar h3{
+        background-color: rgb(61, 61, 41);
+        color: white;
+        text-align: center;
+    }
+    
+}
